@@ -12,12 +12,35 @@
       margin: 5px
       border-radius: 5px
       box-shadow: 0 2px 12px 0 rgb(0 0 0 / 10%)
+      position: relative
+
+      &-detail
+        font-size: 12px
+        text-align: center
+
+      .remove-btn
+        position: absolute
+        right: 5px
+        top: -10px
+
+        &:hover
+          transform: scale(1.2)
+
+      .detail-btn
+        position: absolute
+        right: 5px
+        top: 20px
+
+        &:hover
+          transform: scale(1.2)
+
 
   .add-btn
     position: fixed
     right: 10px
     top: 10px
     transition-duration: .3s
+
     &:hover
       transform: rotate(360deg) scale(1.5)
       transition-duration: .3s

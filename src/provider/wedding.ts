@@ -9,8 +9,7 @@ export default class WeddingDatabase extends Dexie {
 
     constructor() {
         super(DB_NAME)
-
-        this.version(1).stores({
+        this.version(2).stores({
             wedding: '++id,colorName,colorValue,desc,cost,price',
             attachment: '++id,weddingId,name,path',
         })

@@ -6,3 +6,5 @@ declare module '*.vue' {
 }
 
 declare var window: Window
+
+declare module "vue-video-player"
